@@ -5,7 +5,7 @@ const port = process.env.PORT || 3033;
 
 app.use(express.json());
 
-app.post('/main', (req, res) => {
+app.get('/', (req, res) => {
 
     res.send(error);
 
