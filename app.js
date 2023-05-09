@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const fetch = require('node-fetch');
-const port = process.env.PORT || 3033;
+const port = process.env.PORT || 3002;
 
 app.use(express.json());
 
@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 });
 
-app.post("/card", async (req, res) => {
+app.post("/card", (req, res) => {
     var myHeaders = {
         "Content-Type": "application/json",
         "Client-Code": "FC-SB-15",
