@@ -1,0 +1,16 @@
+{
+	"version": 2,
+	"name": "api-z4-vercel",
+	"builds": [
+	 {
+	 "src": "app.js",
+	 "use": "@vercel/node"
+	 }
+	],
+	"routes": [
+         {
+	 "src": "/(.*)",
+	 "dest": "/app.js"
+	 }
+	]
+}
